@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pipedrive Deal Creator (Front-End Only - INSECURE)</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <form id="pipedriveForm">
+    <h1>Create a Pipedrive Deal</h1>
+    <label for="dealName">Deal Name:</label>
+    <input type="text" id="dealName" name="dealName" required>
+
+    <label for="value">Value:</label>
+    <input type="number" id="dealValue" name="dealValue" required>
+
+    <label for="dealStage">Deal Stage:</label>
+    <select id="dealStage" name="dealStage">
+      <option value="1">Item owner</option>
+      <option value="3">Item owner's visibility group</option>
+      <option value="5">Item owner's visibility group and sub group</option>
+      <option value="7">All user</option>
+    </select>
+
+    <button type="submit">Submit to Pipedrive</button>
+  </form>
+
+  <script src="index.js"></script>
+</body>
+</html>
